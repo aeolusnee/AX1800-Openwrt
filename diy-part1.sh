@@ -19,6 +19,6 @@
 # touch feeds.conf.default
 echo 'src-git kiddin9 https://github.com/kiddin9/openwrt-packages' >>feeds.conf.default
 echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
-rm -rf feeds/packages/net/miniupnpd && svn co https://github.com/immortalwrt/packages/branches/openwrt-18.06/net/miniupnpd feeds/packages/net/miniupnpd
+# rm -rf feeds/packages/net/miniupnpd && svn co https://github.com/immortalwrt/packages/branches/openwrt-18.06/net/miniupnpd feeds/packages/net/miniupnpd
 # fix cpu_opp_table
 sed -i '43s/0x3/0xf/;50s/0x3/0xf/;57s/0x1/0xf/' target/linux/qualcommax/patches-6.1/0154-arm64-dts-qcom-ipq6018-use-CPUFreq-NVMEM.patch
